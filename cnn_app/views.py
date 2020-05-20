@@ -15,7 +15,7 @@ if is_model_loaded == False:
 def predict_image(image):
     image_tensor = apply_test_transforms(image)
     # image_tensor = image_tensor.unsqueeze_(0)
-    input = image_tensor.cuda()
+    input = image_tensor
     output = model(input[None, ...])
     index = output.data.cpu().numpy().argmax()
     return index

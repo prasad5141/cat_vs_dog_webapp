@@ -58,7 +58,7 @@ def load_model():
     optimizer = optim.Adam(model.parameters(), lr=0.001)
     model.load_state_dict(torch.load('cat_vs_dog_nn.pth'))
     # is_model_loaded = True
-    model.cuda()
+    # model.cuda()
     model.eval()
     return model
 
