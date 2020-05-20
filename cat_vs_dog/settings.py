@@ -27,7 +27,7 @@ SECRET_KEY = 'a-noen)poosj5$rtm1h=g16l8_(tz%2$on+0avq=+3*g^q$q&n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['catsvsdogs2.azurewebsites.net',]
 
 
 # Application definition
