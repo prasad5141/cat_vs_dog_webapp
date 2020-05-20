@@ -56,7 +56,7 @@ def load_model():
     model = Net()
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=0.001)
-    model.load_state_dict(torch.load('cat_vs_dog_nn.pth'))
+    model.load_state_dict(torch.load('cat_vs_dog_nn.pth', map_location=torch.device('cpu')))
     # is_model_loaded = True
     # model.cuda()
     model.eval()
