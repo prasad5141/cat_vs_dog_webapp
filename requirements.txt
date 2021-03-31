@@ -10,7 +10,7 @@ Django==3.0.6
 django-storages==1.9.1
 future==0.18.2
 idna==2.9
-lxml==4.5.1
+lxml==4.6.3
 numpy==1.18.4
 Pillow==7.1.2
 pycparser==2.20
